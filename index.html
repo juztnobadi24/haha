@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juzt IPTV · hidden channels</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Shaka Player for DASH (with DRM) + HLS.js for HLS -->
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.7.11/dist/shaka-player.compiled.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.7/dist/hls.min.js"></script>
+</head>
+<body>
+    <div id="appContainer">
+        <!-- CHANNELS PANEL - left side in landscape -->
+        <div class="channels-panel" id="channelsPanel">
+            <div class="panel-header">
+                <h3>📺 Juzt Channels</h3>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-cat="all">All</button>
+                <button class="filter-btn" data-cat="tv">TV</button>
+                <button class="filter-btn" data-cat="radio">Radio</button>
+            </div>
+            <select class="group-select" id="groupSelect">
+                <option value="all">🎯 All groups</option>
+                <option value="Movies">Movies</option>
+                <option value="Kids and Animation">Kids & Animation</option>
+                <option value="Pinoy">Pinoy</option>
+                <option value="FM">FM</option>
+            </select>
+            <div class="channels-grid" id="channelsGrid"></div>
+            <div class="nowplaying-footer" id="nowPlayingFooter">⚡ Select a channel</div>
+        </div>
+
+        <!-- PLAYER AREA -->
+        <div class="player-area" id="playerArea" tabindex="0" role="button" aria-label="Toggle channels">
+            <video id="videoPlayer" autoplay playsinline></video>
+            <div id="audioPlayerContainer">
+                <div class="audio-cover">📻</div>
+                <audio id="audioPlayer" controls></audio>
+            </div>
+            <div class="live-badge">LIVE</div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

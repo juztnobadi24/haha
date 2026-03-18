@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Juzt-Tv Box",
+    "type": "hls",
+    "category": "tv",
+    "manifestUri": "https://live20.bozztv.com/giatvplayout7/giatv-210639/playlist.m3u8",
+    "logo": "https://i.imgur.com/7EngqUi.png",
+    "groups": ["Movies"]
+  },
+  {
+    "name": "Angry Bird",
+    "type": "dash",
+    "category": "tv",
+    "groups": ["Kids and Animation"],
+    "manifestUri": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=547",
+    "logo": "https://d21tktytfo9riy.cloudfront.net/wp-content/uploads/2021/05/27151240/AB_RELOADED_202105_780x800_CharactersAndLogo-1.png"
+  },
+  {
+    "name": "Cinemo",
+    "type": "dash",
+    "category": "tv",
+    "groups": ["Pinoy", "Movies"],
+    "manifestUri": "https://d1bail49udbz1k.cloudfront.net/out/v1/3a895f368f4a467c9bca0962559efc19/index.mpd",
+    "drm": {
+      "type": "org.w3.clearkey",
+      "keyIds": {
+        "aa8aebe35ccc4541b7ce6292efcb1bfb": "aab1df109d22fc5d7e3ec121ddf24e5f"
+      }
+    },
+    "logo": "https://yt3.ggpht.com/a-/AAuE7mAK5lTlRJwr2rZLeitoTnOYkjForU2cvszswQ=s900-mo-c-c0xffffffff-rj-k-no"
+  },
+  {
+    "name": "Hits Now",
+    "type": "dash",
+    "category": "tv",
+    "groups": ["Movies"],
+    "manifestUri": "https://qp-pldt-live-bpk-02-prod.akamaized.net/bpk-tv/cg_hitsnow/default/index.mpd",
+    "drm": {
+      "type": "org.w3.clearkey",
+      "keyIds": {
+        "14439a1b7afc4527bb0ebc51cf11cbc1": "92b0287c7042f271b266cc11ab7541f1"
+      }
+    },
+    "logo": "https://th.bing.com/th/id/OIP.cM1HO2isouoNessbj31CcgAAAA?rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "90.7 Love Radio",
+    "type": "mp3",
+    "category": "radio",
+    "groups": ["FM"],
+    "manifestUri": "https://azura.loveradio.com.ph/listen/love_radio_manila/radio.mp3",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/3/32/Love_Radio_2021_logo.png?Love_Radio1184620647"
+  },
+  {
+    "name": "96.3 Easy Rock",
+    "type": "mp3",
+    "category": "radio",
+    "groups": ["FM"],
+    "manifestUri": "https://azura.easyrock.com.ph/listen/easy_rock_manila/radio.mp3",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/New_modernized_logo_of_96.3_Easy_Rock_-_Vectorized_via_InkScape.svg"
+  }
+]
